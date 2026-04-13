@@ -1,0 +1,84 @@
+/* Reset cơ bản */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.portfolio-hero {
+  /* YÊU CẦU 1: Fallback phông chữ ít nhất 3 tầng */
+  font-family: "Segoe UI", Tahoma, sans-serif;
+
+  /* YÊU CẦU 3: Pha trộn màu RGBA mờ và hình nền (cover) */
+  background:
+    linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)),
+    url("https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1350&q=80");
+  background-size: cover;
+  background-position: center;
+
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* YÊU CẦU 2: Sử dụng rem cho tiêu đề */
+.author-name {
+  font-size: 3.5rem;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+/* YÊU CẦU 5: Pseudo-element tạo hiệu ứng gạch ngang dưới tên */
+.author-name::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 4px;
+  background-color: #1abc9c;
+  margin: 10px auto 0;
+}
+
+/* YÊU CẦU 2: Sử dụng px cho text phụ */
+.job-title {
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  color: #bdc3c7;
+}
+
+.description {
+  font-size: 14px;
+  max-width: 500px;
+  margin: 0 auto 30px;
+  color: #95a5a6;
+}
+
+/* YÊU CẦU 4: Text nhấn mạnh bằng letter-spacing lớn */
+.slogan {
+  font-size: 16px;
+  font-weight: bold;
+  color: #1abc9c;
+  letter-spacing: 6px; /* Giãn chữ lớn */
+  margin-bottom: 40px;
+}
+
+/* YÊU CẦU 4: Nút Tải CV với Hover effect đổi màu */
+.btn-cv {
+  display: inline-block;
+  padding: 12px 35px;
+  border: 1px solid #1abc9c;
+  color: #1abc9c;
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 0.4s ease;
+  background: transparent;
+}
+
+.btn-cv:hover {
+  background-color: #1abc9c;
+  color: #ffffff;
+  box-shadow: 0 5px 15px rgba(26, 188, 156, 0.3);
+}

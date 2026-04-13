@@ -1,0 +1,63 @@
+body {
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  font-family: "Georgia", serif;
+}
+
+.quote-wrapper {
+  background-color: #fff;
+  width: 600px;
+  padding: 40px 60px;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  border-left: 5px solid #2980b9;
+}
+
+.quote-content {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #555;
+  font-style: italic;
+  margin: 0;
+  position: relative;
+}
+
+.quote-content::before {
+  content: "“";
+  font-size: 4rem;
+  color: #ddd;
+  position: absolute;
+  left: -40px;
+  top: -20px;
+  font-family: serif;
+}
+
+.quote-content::after {
+  content: "”";
+  font-size: 4rem;
+  color: #ddd;
+  position: absolute;
+  right: -20px;
+  bottom: -40px;
+  font-family: serif;
+}
+
+.quote-content::first-letter {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #2980b9;
+  float: left;
+  margin-right: 10px;
+  line-height: 1;
+  font-style: normal;
+}
+
+.quote-author {
+  text-align: right;
+  color: #888;
+  margin-top: 30px;
+  font-style: normal;
+  font-size: 0.9rem;
+}

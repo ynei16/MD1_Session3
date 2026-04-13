@@ -1,0 +1,97 @@
+/* Thiết lập chung */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f7f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Container chứa 3 cột */
+.pricing-container {
+  display: flex;
+  align-items: center; /* Giúp các cột không nổi bật ngắn hơn một chút */
+  gap: 0; /* Các cột liền kề nhau */
+}
+
+/* Định dạng chung cho mỗi thẻ bảng giá */
+.pricing-card {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  padding: 40px 30px;
+  width: 280px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+/* Định dạng tiêu đề và giá */
+.pricing-card h3 {
+  color: #555;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.price {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.price span {
+  font-size: 0.9rem;
+  color: #888;
+  font-weight: normal;
+}
+
+/* Danh sách tính năng */
+.features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px 0;
+  border-top: 1px solid #eee;
+}
+
+.features li {
+  padding: 12px 0;
+  border-bottom: 1px dotted #eee;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* Nút bấm */
+.btn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 100%;
+}
+
+.btn:hover {
+  background-color: #2980b9;
+}
+
+/* PHẦN QUAN TRỌNG: LÀM NỔI BẬT GÓI CHUYÊN NGHIỆP */
+.pricing-card.featured {
+  border: 2px solid #3498db; /* Viền xanh đậm */
+  background-color: #ebf5fb; /* Nền xanh nhạt */
+  transform: scale(1.05); /* Phóng to nhẹ */
+  z-index: 10; /* Nổi lên trên các cột khác */
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.featured h3,
+.featured .price {
+  color: #2980b9; /* Đổi màu chữ sang xanh chuyên nghiệp */
+}
+
+.btn-featured {
+  background-color: #2980b9;
+}

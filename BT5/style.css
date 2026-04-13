@@ -1,0 +1,68 @@
+/* 1. Thiết lập chung cho toàn bộ trang */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9; /* Màu nền nhẹ cho trang */
+  display: flex; /* Dùng Flexbox để đưa thẻ vào chính giữa */
+  justify-content: center;
+  padding-top: 80px;
+  margin: 0;
+}
+
+/* 2. Định dạng khung thẻ sản phẩm (Card) */
+.product-card {
+  background-color: #ffffff; /* Màu nền trắng */
+  width: 250px;
+  padding: 20px;
+  text-align: center; /* Căn giữa nội dung văn bản */
+  border-radius: 12px; /* Bo góc thẻ */
+
+  /* Đổ bóng cho thẻ trông chuyên nghiệp */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* 3. Khu vực ảnh */
+.product-img-box img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px; /* Bo góc ảnh */
+  margin-bottom: 15px;
+}
+
+/* 4. Tên sản phẩm */
+.product-title {
+  font-size: 1.1rem;
+  color: #333;
+  margin: 10px 0 5px 0;
+}
+
+/* 5. Giá sản phẩm */
+.product-price {
+  color: #e67e22; /* Màu cam nổi bật cho giá */
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* 6. Nút "Mua ngay" - Trạng thái bình thường */
+.btn-buy {
+  background-color: #2ecc71; /* Màu nền mặc định (Xanh lá) */
+  color: white; /* Màu chữ trắng */
+  border: none;
+  padding: 10px 25px;
+  border-radius: 6px; /* Bo góc nút */
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.9rem;
+
+  /* Hiệu ứng chuyển màu mượt mà */
+  transition: 0.3s background-color ease;
+}
+
+/* 7. Nút "Mua ngay" - YÊU CẦU QUAN TRỌNG KHI HOVER */
+.btn-buy:hover {
+  /* Khi chuột di qua, đổi sang màu nền khác
+       và hơi TRONG SUỐT ĐI 50% bằng hệ màu RGBA */
+
+  /* rgba(Red, Green, Blue, Alpha) */
+  /* Alpha = 0.5 là trong suốt 50% */
+  background-color: rgba(52, 152, 219, 0.5); /* Màu xanh dương trong suốt 50% */
+}
