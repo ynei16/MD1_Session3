@@ -1,0 +1,25 @@
+.course-container {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  padding: 30px;
+  border: 1px solid #eee;
+  width: fit-content;
+}
+
+/* 1. Selector + : In nghiêng và giãn chữ cái */
+h2 + .intro {
+  font-style: italic;
+  letter-spacing: 1px;
+  color: #666;
+}
+
+/* 2. Selector > : Chỉ môn học con trực tiếp có màu nổi bật */
+.main-list > li {
+  color: #d35400;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.sub-list li {
+  font-weight: normal;
+  color: #333;
+}
